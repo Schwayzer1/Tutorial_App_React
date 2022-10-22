@@ -22,10 +22,10 @@ const AddTutorial = ({ getTutorials }) => {
 
   return (
     <div className="container text-center mt-4">
-      <h1 className="display-6 text-danger">Add Your Tutorial</h1>
+      <h1 className="display-6 fw-bold">Add Your Tutorial</h1>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
-          <label htmlFor="title" className="form-label">
+          <label htmlFor="title" className="form-label fw-bold">
             Title
           </label>
           <input
@@ -39,8 +39,8 @@ const AddTutorial = ({ getTutorials }) => {
           />
         </div>
         <div className="mb-3">
-          <label htmlFor="description" className="form-label">
-            description
+          <label htmlFor="description" className="form-label fw-bold">
+            Description
           </label>
           <input
             type="text"

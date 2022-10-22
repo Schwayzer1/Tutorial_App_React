@@ -1,0 +1,8 @@
+body {
+  background: radial-gradient(circle, white, lightgrey, grey, black);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.task-list {
+  background: linear-gradient(90deg, white, grey, black);
+}

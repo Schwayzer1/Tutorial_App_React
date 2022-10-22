@@ -42,10 +42,10 @@ const TutorialList = ({ tutorials, getTutorials }) => {
     getTutorials();
   };
   return (
-    <div className="container mt-4">
+    <div className="container mt-4 task-list">
       <table className="table table-striped">
         <thead>
-          <tr>
+          <tr className="fw-bolder text-danger">
             <th scope="col">#id</th>
             <th scope="col">Title</th>
             <th scope="col">Description</th>
@@ -58,7 +58,7 @@ const TutorialList = ({ tutorials, getTutorials }) => {
           {tutorials?.map((item) => {
             const { id, title, description } = item;
             return (
-              <tr key={id}>
+              <tr key={id} className="fw-bold">
                 <th>{id}</th>
                 <td>{title}</td>
                 <td>{description}</td>
@@ -66,7 +66,7 @@ const TutorialList = ({ tutorials, getTutorials }) => {
                   <FaEdit
                     size={20}
                     type="button"
-                    className="me-2 text-warning"
+                    className="me-2 text-white"
                     data-bs-toggle="modal"
                     data-bs-target="#edit-modal"
                     onClick={() => setNewItem(item)}
